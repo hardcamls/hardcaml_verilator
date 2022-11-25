@@ -1,4 +1,5 @@
 (library (name hardcaml_verilator) (public_name hardcaml_verilator)
  (libraries core hardcaml core_unix ctypes ctypes.foreign
   core_unix.filename_unix core_unix.sys_unix)
+ (flags (:standard -w -49))
  (preprocess (pps ppx_deriving_hardcaml ppx_jane)))
